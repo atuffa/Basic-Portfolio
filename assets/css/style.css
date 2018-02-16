@@ -1,10 +1,21 @@
 /*-Styling for links assigned globally-*/
 body {
-    /*background-image: url('./images/dust_scracthes.png');*/
-    background-color: grey;
+    background-image: url('../images/dust_scratches.png');
     margin: 0px auto;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color:#777777;
+}
+
+h1{
+    font-size:2.5em;
+  
+}
+h2{
+    font-size: 2em;
+}
+
+p{
+    line-height: 1.5em;
 }
 
 /*-- Colors are from adobe kuler --*/
@@ -31,6 +42,7 @@ a:active{
 /*-- Local Styling --*/
 
 /*--header--*/
+
 header {
     background-color: #ffffff;
     border-bottom: 3px solid #cccccc;
@@ -72,6 +84,7 @@ header {
 .container li {
     float: left;
     padding:10px;
+    font-weight: bold;
     
 }  
 
@@ -94,6 +107,9 @@ main {
     
 }
  /* -- Content(left column)--*/
+
+
+
 
 /* -- Content Floating--*/
 .content{
@@ -121,12 +137,12 @@ main::after  {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color:#4aaaa5;
     width: 600px;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 15px auto;
     border-bottom: 3px solid #cccccc;
 }
 /* -- image floating and styling--*/
-.content img{
+.content .profile{
     width: 210px;
     height: 150px;
     float:left;
@@ -134,14 +150,16 @@ main::after  {
     padding-left: 25px;
 }
 .content.intro p{
-    float:left;
+    float: left;
 }
 .intro::after {
     content: "";
     display: block;
     clear: both;
 }
+
 /* -- paragraph styling--*/
+
 .content p{
     padding-right: 15px;
 }
@@ -152,7 +170,14 @@ main::after  {
 }
 
 /*- side bar-*/
+
+/* -- fonting--*/
+.sidebar h2{
+    font-size: 1.5em;
+}
+
 /* -- header styling--*/
+
 .sidebar h2{
     font-family: 'Georgia', Times, Times New Roman, serif;
     color:#4aaaa5;
@@ -163,14 +188,15 @@ main::after  {
     
 }
 /* -- Icon styling and floating--*/
+
 .sidebar ul{
     margin: 0px;
-    padding: 0px 15px;
+    padding: 0px 15px ;
 }
 .sidebar li{
     list-style-type: none;
     float:left;
-    padding:0px 10px 0px 0px;
+    padding:0px 10px 10px 0px;
     margin: 0px 5px;
 }
 
@@ -181,6 +207,9 @@ main::after  {
 form {
     padding: 15px 15px 15px 25px;
     width: 600px;
+}
+form label{
+    font-weight: bold;
 }
 form input{
     width:100%;
@@ -210,6 +239,94 @@ form input.submit:active{
     text-decoration: none;
 }
 
+/*--Unique styling for Portfolio html page --*/
+
+
+/* -- styling for the image elements--*/
+.firstrow figure{
+    margin: 0px 0 20px 20px;
+    float:left;
+}
+.firstrow img:first-of-type{
+   
+    width: 285px;
+    height: 285px;
+    border: 1px solid black;
+    margin:10px 0px 20px 0px;
+}
+.firstrow img:last-of-type{
+    width: 285px;
+    height: 285px;
+    border: 1px solid black;
+    margin:10px 5px 0px 5px;
+}
+.firstrow::after {
+    
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.secondrow figure{
+    margin: 0px 0 10px 20px;
+    float:left;
+}
+.secondrow img:first-of-type{
+   
+    width: 285px;
+    height: 285px;
+    border: 1px solid black;
+    margin:0px 26px 20px 25px;
+}
+.secondrow img:last-of-type{
+    width: 285px;
+    height: 285px;
+    border: 1px solid black;
+    margin:0px 5px;
+}
+.secondrow::after {
+    
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.thirdrow figure{
+    margin: 0px 0 25px 20px;
+    float:left;
+}
+.thirdrow img{
+   
+    width: 285px;
+    height: 285px;
+    border: 1px solid black;
+    margin:0px 26px 0px 5px;
+}
+
+.thirdrow::after {
+    
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*-- Fig Captions--*/
+
+/*-- Postioning and styling the caption inline element--*/
+
+figcaption {
+  position: absolute;
+  margin-top: -80px;
+  color: #ffffff;
+  margin-left: 6px;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #4aaaa5;
+  width: 285px;
+  padding: 15px 0px;
+  
+}
+
 /*-- Footer--*/
 
 /*--styling footing elements--*/
@@ -228,3 +345,4 @@ footer {
     bottom: 0px;
   
 }
+
